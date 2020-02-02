@@ -35,7 +35,7 @@ inquirer.prompt(questions).then(function(data) {
     var starcount = 0;
     axios.get(queryUrlStar).then(function(res) {
         //starcount = Math.parseInt()
-        console.log(res.data[0].stargazers_count);
+        // console.log(res.data[0].stargazers_count);
         starcount = res.data[0].stargazers_count
     });
     axios.get(queryUrl).then(function(res) {
@@ -50,6 +50,7 @@ inquirer.prompt(questions).then(function(data) {
             // console.log(result.logs);
             result.stream.pipe(fs.createWriteStream(`./${data.gitName}.pdf`));
             conversion.kill(); // necessary if you use the electron-server strategy, see bellow for details
+            console.log(`File created`);
         });
     });
 

@@ -33,7 +33,7 @@ function generateHTML(data, res, starcount) {
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <script src="https://kit.fontawesome.com/a90c630c66.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"/>
         <link href="https://fonts.googleapis.com/css?family=BioRhyme|Cabin&display=swap" rel="stylesheet">
         <title>Document</title>
         <style>
@@ -222,7 +222,9 @@ function generateHTML(data, res, starcount) {
                     <h4>${res.data.company}</h4>
                     <div class="links-nav">
                         <div class="col nav-link">
-                            <a href="https://www.google.com/maps/place/${res.data.location}" target="blank" class="nav-link links-nav"><i class="fas fa-location-arrow"></i>${res.data.location}</a>
+                            <a href="https://www.google.com/maps/place/${res.data.location}" target="blank" class="nav-link links-nav">
+                                <i class="fas fa-location-arrow"></i>${res.data.location}
+                            </a>
                         </div>
                         <div class="col nav-link">
                             <a href="${res.data.html_url}" target="blank" class="nav-link links-nav">
