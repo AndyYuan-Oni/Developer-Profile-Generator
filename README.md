@@ -34,7 +34,8 @@ This is for installing all needed npm. Then type in:
 ```
 node index.js
 ```
-Fill in inquirer questions and hit enter,if no error, the pdf file will be generated in the same folder with the name of github name.
+Fill in inquirer questions and hit enter. 
+If no error, the pdf file will be generated in the same folder with the name of github name.
 
 Click to chek out a [Demo PDF](assets/AndyYuan-Oni.pdf)
 
