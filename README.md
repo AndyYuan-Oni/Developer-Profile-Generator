@@ -24,17 +24,21 @@ the PDF file will include the following info:
 
 ## How to Use
 
-Down load the file, open terminal in index.js file.
-in console, type in:
+Down load the file, open terminal to index.js route.
+
+In console, type in:
 ```
 npm install
 ```
-This is for installing all needed npm. Then type in:
+This is for installing all needed npm. 
+
+Then type in:
 
 ```
 node index.js
 ```
 Fill in inquirer questions and hit enter. 
+
 If no error, the pdf file will be generated in the same folder with the name of github name.
 
 Click to chek out a [Demo PDF](assets/AndyYuan-Oni.pdf)
